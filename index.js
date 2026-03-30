@@ -9,6 +9,7 @@
   };
   const decoder = new TextDecoder();
   const decode = (x) => decoder.decode(x);
+
   function logData(data) {
     if (data instanceof Uint8Array) {
       console.warn(decode(data));
